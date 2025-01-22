@@ -1,0 +1,240 @@
+* {
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    padding: 0; /* Elimina el relleno por defecto de todos los elementos */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total del elemento */
+  }
+
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define la fuente utilizada en el cuerpo de la página */
+    line-height: 1.6; /* Aumenta la altura de línea para mejorar la legibilidad */
+    background-color: #f9f9f9; /* Establece un color de fondo claro */
+    color: #331005; /* Define un color de texto oscuro */
+  }
+
+header > h1 {
+    background-image: url(./multimedia/fondo.jpg); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* La imagen cubrirá todo el espacio del header */
+    background-position: center; /* Centra la imagen */
+    height: 500px; /* Altura del header */
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: left; /* Centra horizontalmente el texto */
+    align-items: center; /* Centra verticalmente el texto */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    color: white; /* Color del texto */
+    padding: 8rem; /* Espaciado interno */
+    position: relative; /* Útil para añadir más elementos con posición relativa */
+    transition: background-color 0.3s ease; /* Define una transición suave para el cambio de color de fondo */
+}
+ 
+    h1 {
+    font-size: 5rem; /* Tamaño del texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejor contraste */
+
+}
+  
+nav{
+    position: fixed;
+    z-index: 1000; /* Mantiene el nav por encima de otros elementos */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+nav ul {
+    
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Utiliza Flexbox para organizar los elementos en línea */
+    justify-content: center; /* Centra los elementos de la lista */
+    align-items: center; /* Centra verticalmente el texto */
+    margin: 30px; /* Espacio superior entre el encabezado y la barra de navegación */
+  }
+  
+nav li {
+    margin: 0 15px; /* Espacio horizontal entre los elementos de la lista */
+    font-size: 20px;
+  }
+  
+nav a {
+    color: #fff; /* Establece el color de los enlaces como blanco */
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    font-weight: bold; /* Hace el texto de los enlaces en negrita */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color de los enlaces */
+  }
+  
+nav a:hover {
+    color: #e56700; /* Cambia el color del enlace cuando el ratón pasa sobre él */
+  }
+  
+  h2{
+    font-size: 2.5em;
+    margin: 10px;
+  }
+
+  .contenedor-menu h3{
+    font-size: 1.5em;
+    margin: 10px;
+    color: #cc5c00;
+  }
+
+  h3{
+    font-size: 1.5em;
+    margin: 10px;
+    color: #eeeeee ;
+  }
+
+
+/* ===== Galería de recomendados CSS Grid ===== */
+
+.seccion-recomendados{
+    padding: 20px; /* Espaciado interno de la galería */
+    text-align: center; /* Centra el texto dentro de la galería */
+    background-color: #e56700;
+}
+
+.contenedor-recomendados{
+    display: grid; /* Utiliza CSS Grid para organizar los elementos */
+    grid-template-columns: repeat(4, 1fr); /* Crea 3 columnas de igual tamaño */
+    gap: 10px; /* Espacio entre las celdas del grid */
+    margin-top: 20px; /* Espacio superior entre la galería y otros elementos */
+}
+
+.caja-recomendados{
+    color: #fff; /* Color de texto blanco */
+    text-align: center; /* Centra el contenido dentro de cada celda */
+    padding: 40px; /* Espaciado interno de cada celda */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente más grande */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transición para el cambio de color y la transformación */
+}
+
+.caja-recomendados:hover{
+    background-color: rgba(230, 142, 0, 0.5); /* Cambia el color de fondo cuando el ratón pasa sobre la celda */
+    transform: scale(1.01); /* Aumenta ligeramente el tamaño de la celda */
+}
+
+.caja-recomendados img{
+    width: 100%; /* La imagen ocupa todo el ancho de la celda */
+    height: 200px; /* Establece una altura fija para la imagen */
+    object-fit: contain; /* Ajusta la imagen recortando si es necesario para mantener las proporciones */
+    display: block; /* Elimina el espacio blanco debajo de la imagen */
+    transition: transform 0.3s ease; /* Aplica una transición para la transformación de la imagen */
+}
+
+/* ===== Galería del menú CSS Grid ===== */
+
+.seccion-menu{
+  padding: 20px; /* Espaciado interno de la galería */
+  text-align: center; /* Centra el texto dentro de la galería */
+}
+
+.contenedor-menu{
+  display: grid; /* Utiliza CSS Grid para organizar los elementos */
+  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+  gap: 15px; /* Espacio entre las celdas del grid */
+  margin-top: 20px; /* Espacio superior entre la galería y otros elementos */
+  margin-bottom: 40px;
+}
+
+.caja-menu{
+  color: #e56700; /* Color de texto blanco */
+  text-align: center; /* Centra el contenido dentro de cada celda */
+  padding: 40px; /* Espaciado interno de cada celda */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño de fuente más grande */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transición para el cambio de color y la transformación */
+}
+
+.caja-menu:hover{
+  background-color: #eeeeee; /* Cambia el color de fondo cuando el ratón pasa sobre la celda */
+  transform: scale(1.01); /* Aumenta ligeramente el tamaño de la celda */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar más énfasis al efecto de elevación */
+}
+
+.caja-menu img{
+  width: 100%; /* La imagen ocupa todo el ancho de la celda */
+  height: 250px; /* Establece una altura fija para la imagen */
+  object-fit: contain; /* Ajusta la imagen recortando si es necesario para mantener las proporciones */
+  display: block; /* Elimina el espacio blanco debajo de la imagen */
+  transition: transform 0.3s ease; /* Aplica una transición para la transformación de la imagen */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0; /* Inicia con la tarjeta completamente transparente */
+    transform: translateY(20px); /* Inicia con la tarjeta desplazada hacia abajo */
+  }
+  to {
+    opacity: 1; /* Termina con la tarjeta completamente visible */
+    transform: translateY(0); /* Termina con la tarjeta en su posición original */
+  }
+}
+
+.caja-menu img {
+  animation: fade-in 0.8s ease-in-out; /* Aplica la animación 'fade-in' a las tarjetas con duración de 0.8s */
+}
+
+
+/* ===== Media Queries ===== */
+/* Dispositivos medianos (pantallas con un ancho máximo de 768px) */
+@media (max-width: 768px) {
+  .contenedor-recomendados {
+    grid-template-columns: repeat(2, 1fr); /* Reduce las columnas del grid a 2 */
+  }
+  .contenedor-menu {
+    grid-template-columns: repeat(1, 1fr); /* Reduce las columnas del grid a 2 */
+  }
+
+}
+
+/* Dispositivos pequeños (pantallas con un ancho máximo de 480px) */
+@media (max-width: 480px) {
+  .contenedor-recomendados {
+    grid-template-columns: 1fr; /* Reduzca el grid a una sola columna */
+  }
+
+  .contenedor-menu {
+    grid-template-columns: repeat(1, 1fr); /* Reduce las columnas del grid a 2 */
+  }
+
+  nav ul {
+    flex-direction: column; /* Organiza la barra de navegación verticalmente */
+  }
+
+  nav li {
+    margin: 5px 0; /* Reduce el espacio entre los elementos de la lista */
+  }
+}
+
+button {
+  background-color: #e56700; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin bordes */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 20px; /* Tamaño del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+  cursor: pointer; /* Cambia el cursor al pasar encima */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+  background-color: #e56700; /* Cambia el color de fondo al pasar el cursor */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Incrementa la sombra */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+footer {
+  
+  background-color: #2c3e50; /* Color de fondo oscuro para el pie de página */
+  color: #fff; /* Color de texto blanco */
+  text-align: center; /* Centra el texto del pie de página */
+  padding: 10px 0; /* Espaciado interno en la parte superior e inferior del pie de página */
+  margin-top: 20px; /* Espacio superior entre el pie de página y otros elementos */
+  height: 300px;
+  align-content: center;
+}
+
+footer img{
+  width: 150px;
+
+}
