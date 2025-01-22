@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    
+    <!--Cabecera de la página-->
+    <header>
+        <h1>Datos curiosos</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Colombia</a></li>
+                <li><a href="#">Internacional</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h2>Gastronomía colombiana</h2>
+                <time datetime="2024-12-12">12 de diciembre de 2024</time>
+            </header>
+            <p>La gastronomía colombiana es una rica fusión de tradiciones indígenas, africanas y europeas, que varía notablemente entre sus regiones. Platos emblemáticos como la bandeja paisa, el ajiaco y el sancocho destacan por su sabor y abundancia, mientras que productos autóctonos como el maíz, la yuca y el plátano son ingredientes esenciales. Además, la diversidad cultural del país se refleja en dulces como las arepas, las obleas y el bocadillo, que deleitan los paladares y celebran la identidad culinaria colombiana.</p>
+            <figure>
+                <img src="bandeja.jpg" width="500" alt="bandeja paisa">
+                <figcaption>Un vistaso a la gastronomía</figcaption>
+            </figure>
+            <footer>
+                <a href="#">Leer mas</a>
+            </footer>
+        </article>
+        <article>
+            <header>
+                <h2>Gastronomía Peruana</h2>
+                <time datetime="2024-12-12">12 de diciembre de 2024</time>
+            </header>
+            <p>La gastronomía colombiana es una rica fusión de tradiciones indígenas, africanas y europeas, que varía notablemente entre sus regiones. Platos emblemáticos como la bandeja paisa, el ajiaco y el sancocho destacan por su sabor y abundancia, mientras que productos autóctonos como el maíz, la yuca y el plátano son ingredientes esenciales. Además, la diversidad cultural del país se refleja en dulces como las arepas, las obleas y el bocadillo, que deleitan los paladares y celebran la identidad culinaria colombiana.</p>
+            <figure>
+                <img src="peru.jpg" width="500" alt="bandeja paisa">
+                <figcaption>Un vistaso a la gastronomía</figcaption>
+            </figure>
+            <footer>
+                <a href="#">Leer mas</a>
+            </footer>
+        </article>
+        <article>
+            <header>
+                <h2>Gastronomía Ecuatoriana</h2>
+                <time datetime="2024-12-12">12 de diciembre de 2024</time>
+            </header>
+            <p>La comida típica ecuatoriana es un reflejo de la riqueza cultural y geográfica del país, con sabores que varían entre la costa, la sierra y la Amazonía. Platos emblemáticos como el encebollado, la fanesca y el locro de papa destacan por su tradición y autenticidad. Ingredientes como el plátano, el maíz, la yuca y el pescado fresco son esenciales en su gastronomía, mientras que delicias como los patacones, los ceviches y el cuy asado muestran la diversidad culinaria que hace de Ecuador un destino lleno de sabor y tradición.</p>
+            <figure>
+                <img src="ecuador.jpg" width="500" alt="bandeja paisa">
+                <figcaption>Un vistazo a la gastronomía</figcaption>
+            </figure>
+            <footer>
+                <a href="#">Leer mas</a>
+            </footer>
+        </article>
+        
+
+       <!--Barra lateral-->
+       <aside>
+        <section>
+            <header>
+                <h2>Noticias Relacionadas</h2>
+            </header>
+            <ul>
+                <li><a href="#">Noticia 1</a></li>
+                <li><a href="#">Noticia 2</a></li>
+                <li><a href="#">Noticia 3</a></li>
+            </ul>
+        </section>
+    </aside>
+
+
+    </main>
+    <br><br>
+    <!--Contacto-->
+    <center>
+    <form action="">
+     <label for="name">Nombre:</label>
+     <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+         <label for="email">Ingrese su email</label>
+         <input type="email" name="email" id="email" placeholder="ingrese su email" required>
+         <br><br>
+         <!-- Campo de texto largo (textarea) -->
+     <label for="mensaje">Mensaje:</label>
+     <br><br><textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje"></textarea> 
+     <!-- Casillas de verificación -->
+     <br><br>
+     <label for="terminos">Acepto recibir emails con las novedades</label>
+     <input type="checkbox" id="terminos" name="terminos" required>
+    </form>
+    </center>
+    
+    <hr>
+    <footer>
+        <figure id="logo">
+            <img src="images.png" width="50">
+        </figure>
+        <p>Contacto</p>
+        <p>&copy; 2024 Datos curiosos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

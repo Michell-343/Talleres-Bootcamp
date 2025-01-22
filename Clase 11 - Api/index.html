@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json</title>
+    <script src="json.js" defer></script>
+
+    <style>
+        table{
+            border: 3px black solid;
+        }
+        tr{
+            border: 1px black solid;
+        }
+        td, th{
+            border: 2px black solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>JSON Y API</h1>
+<!-- <script>
+    let datos = 
+                {
+                "nombre": "juan",
+                "apellido": "Giraldo",
+                "edad": 26,
+                "direccio": [
+                    {
+                        "Ciduad": "Cali",
+                        "Dir": "cra 86 # 26 -65",
+                        "barrio": "Valle del lili"
+                    }
+                ],
+                "telefonos": ["3145678321", "3160986542"]
+
+            }
+            
+
+        console.log(datos)
+
+        console.log(datos.nombre, datos.telefonos[0])
+        datos.direccio.forEach(direccion => {
+            console.log(`ciudad: ${direccion.Ciduad}`)
+            
+        });
+</script>
+ -->
+
+<a href="" onclick="obtener(event)">obtener Datos</a>
+ <div>
+    <table id="datos">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+    </table>
+ </div>
+</body>
+</html>

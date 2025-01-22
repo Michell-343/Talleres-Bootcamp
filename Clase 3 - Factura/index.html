@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+</head>
+<body>
+    <br><br>
+    <center>
+    <form action="factura.html" method="post">
+        <label for="cliente">Nombre del cliente:</label>
+        <input type="text" id="cliente" name="cliente" placeholder="Ingrese el nombre del cliente" required>
+        <br><br>
+
+        <label for="producto">Seleccione el producto</label>
+        <select name="producto" id="producto" required>
+            <option value="producto1">Pendones</option>
+            <option value="producto2">Diseño</option>
+            <option value="producto3"><Ri:a></Ri:a>Revista</option>
+            <option value="producto4">Señaletica</option>
+            <option value="producto5">Folletos</option>
+        </select>
+
+        <br><br>
+        <label for="cantidad">Ingrese la cantidad</label>
+        <input type="number" name="cantidad" id="cantidad" required>
+
+        <br><br>
+        <label for="fecha">Fecha de entrega</label>
+        <input type="date" name="fecha" id="fecha" required>
+        <br><br>
+        <fieldset align="center">
+            <legend>Metodo de pago</legend>
+                <label for="pago">Efectivo</label>
+                <input type="radio" name="pago" id="efectivo" required>
+                <br>
+                <label for="pago">Tarjeta</label>
+                <input type="radio" name="pago" id="tarjeta">        
+        </fieldset>
+  
+        <br><br>
+        <label for="mensaje">Observaciones adicionales</label>
+        <br>    
+        <textarea name="texto" id="texto" rows="4" cols="50" placeholder="Escribe tu mensaje"></textarea>
+
+         <br><br>
+        <label for="checkbox">Aceptar términos y condiciones:</label>
+        <input type="checkbox" name="checkbox" id="checkbox" required>
+        <br><a href="terminos.pdf" target="_blank">Click aquí para conocer los terminos y condiciones</a>
+        <br><br>
+         <button type="submit">Enviar</button>
+        <br>
+        <input type="button" value="cancelar">
+    </form>
+    </center>
+</body>
+</html>

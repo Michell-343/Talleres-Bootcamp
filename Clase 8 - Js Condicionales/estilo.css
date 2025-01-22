@@ -1,0 +1,130 @@
+
+/* Estilos generales */
+body {
+    font-family: lato;
+    margin: 0;
+    padding: 0;
+    background-color: #DFEAFC;
+    color: #0e0c38;
+}
+
+header {
+    background-color: #5651AB;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 5em;
+    
+}
+
+h2{
+    color: #5651AB;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+header nav ul li a:hover {
+    color: aqua;
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Botones (izquierda) y texto (derecha) */
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* Sección botones */
+.botones {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.contenedor-botones h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contenedor-botones ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contenedor-botones ul li {
+    margin: 0.5rem 0;
+}
+
+.contenedor-botones ul li a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: #EAEBFF;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: #5651AB;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.contenedor-botones ul li a:hover {
+    background-color: #F8E9FE;
+    color: #5651AB;
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra */
+
+}
+
+/* Sección texto */
+.texto {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.contenedor-texto h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.caja-texto ol {
+    padding-left: 1.5rem;
+}
+
+.caja-texto ol li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #5651AB;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}

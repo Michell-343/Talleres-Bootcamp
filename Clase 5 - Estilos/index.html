@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Equipo</a></li>
+        </ul>
+    </nav>
+    <h1>Design</h1>
+    <p id="infoempresa">Creamos experiencias innovadoras</p> 
+</header>
+<main>
+    <section class="contenido">
+        <h2 id="información">Sobre nosotros</h2>
+        <p >Es una empresa dedicada al diseño y desarrollo web que combina creatividad, innovación y tecnología para ofrecer soluciones digitales personalizadas. Nuestro equipo de expertos crea sitios web atractivos, funcionales y optimizados, adaptados a las necesidades específicas de cada cliente. Con un enfoque en la experiencia del usuario, utilizamos las últimas tendencias en diseño y herramientas de desarrollo para garantizar resultados de alta calidad que impulsen la presencia en línea y el éxito de los negocios.</p>
+    </section>
+
+    <section>
+        <form action="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="digite su nombre" required>
+            <br><label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
+            <br><label for="number">Telefono:</label>
+            <input type="number" name="number" id="number" placeholder="ingrese su numero de telefono" required>
+            <br><label for="observaciones">Ingrese sus observaciones:</label>
+            <textarea name="observaciones" id="observaciones" cols="30" rows="10" placeholder="escriba su mensaje"></textarea>
+            <br><button type="submit" value="Enviar">Enviar</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Conoce nuestros servicios</h2>
+        <table id="servicio">
+            <tr>
+                <th>Servicio</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Diseño</td>
+                <td>Servicio creativo que desarrolla soluciones visuales únicas, funcionales y personalizadas.</td>
+                <td>100.000</td>
+            </tr>
+            <tr>
+                <td>Pagina web</td>
+                <td>Creamos tu pagina web a medida</td>
+                <td>200.000</td>
+            </tr>
+            <tr>
+                <td>Banner</td>
+                <td>Creación y creatividad</td>
+                <td>500.000</td>
+            </tr>
+            <tr>
+                <td>Ecommerce</td>
+                <td>Lo creamos para ti</td>
+                <td>100.000</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="caja">
+        <h2>Deja un comentario</h2>
+        <form class="comment-form" action="#" method="POST">
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" name="comment" rows="5" placeholder="Escribe tu comentario aquí..." required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
+
+    <footer>
+        <figure id="logo">
+            <img src="curve.png" width="50">
+        </figure>
+        <p>Contacto</p>
+        <p>&copy; 2024 Michell Inagan design. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

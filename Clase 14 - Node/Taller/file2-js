@@ -1,0 +1,5 @@
+const fs = require('fs')
+
+fs.writeFileSync('datos.txt', `Bienvenido al manejo de archivos Node ;-;`)
+
+fs.unlinkSync('archivo_actualizado.txt')

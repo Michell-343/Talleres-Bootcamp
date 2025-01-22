@@ -1,0 +1,173 @@
+/* ===== Reset básico ===== */
+* {
+  margin: 0; /* Elimina el margen por defecto de todos los elementos */
+  padding: 0; /* Elimina el relleno por defecto de todos los elementos */
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total del elemento */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Define la fuente utilizada en el cuerpo de la página */
+  line-height: 1.6; /* Aumenta la altura de línea para mejorar la legibilidad */
+  background-color: #f9f9f9; /* Establece un color de fondo claro */
+  color: #333; /* Define un color de texto oscuro */
+}
+
+/* ===== Encabezado ===== */
+.header {
+  background-color: #2c3e50; /* Color de fondo oscuro para el encabezado */
+  color: #fff; /* Color de texto blanco */
+  padding: 20px; /* Espaciado interno alrededor del encabezado */
+  text-align: center; /* Centra el contenido dentro del encabezado */
+  transition: background-color 0.3s ease; /* Define una transición suave para el cambio de color de fondo */
+}
+
+.header:hover {
+  background-color: #34495e; /* Cambia el color de fondo cuando el ratón pasa sobre el encabezado */
+}
+
+.nav ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  display: flex; /* Utiliza Flexbox para organizar los elementos en línea */
+  justify-content: center; /* Centra los elementos de la lista */
+  margin-top: 10px; /* Espacio superior entre el encabezado y la barra de navegación */
+}
+
+.nav li {
+  margin: 0 15px; /* Espacio horizontal entre los elementos de la lista */
+}
+
+.nav a {
+  color: #fff; /* Establece el color de los enlaces como blanco */
+  text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+  font-weight: bold; /* Hace el texto de los enlaces en negrita */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color de los enlaces */
+}
+
+.nav a:hover {
+  color: #1abc9c; /* Cambia el color del enlace cuando el ratón pasa sobre él */
+}
+
+/* ===== Galería usando CSS Grid ===== */
+.gallery {
+  padding: 20px; /* Espaciado interno de la galería */
+  text-align: center; /* Centra el texto dentro de la galería */
+}
+
+.grid-container {
+  display: grid; /* Utiliza CSS Grid para organizar los elementos */
+  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+  gap: 10px; /* Espacio entre las celdas del grid */
+  margin-top: 20px; /* Espacio superior entre la galería y otros elementos */
+}
+
+.grid-item {
+  background-color: #3498db; /* Color de fondo azul para las celdas */
+  color: #fff; /* Color de texto blanco */
+  text-align: center; /* Centra el contenido dentro de cada celda */
+  padding: 40px; /* Espaciado interno de cada celda */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 1.5rem; /* Tamaño de fuente más grande */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transición para el cambio de color y la transformación */
+}
+
+.grid-item:hover {
+  background-color: #2980b9; /* Cambia el color de fondo cuando el ratón pasa sobre la celda */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño de la celda */
+}
+
+.grid-item img {
+  width: 100%; /* La imagen ocupa todo el ancho de la celda */
+  height: 200px; /* Establece una altura fija para la imagen */
+  object-fit: cover; /* Ajusta la imagen recortando si es necesario para mantener las proporciones */
+  display: block; /* Elimina el espacio blanco debajo de la imagen */
+  transition: transform 0.3s ease; /* Aplica una transición para la transformación de la imagen */
+}
+
+/* ===== Sección de Tarjetas usando Flexbox ===== */
+.cards-section {
+  padding: 20px; /* Espaciado interno de la sección de tarjetas */
+  text-align: center; /* Centra el texto de las tarjetas */
+}
+
+.cards {
+  display: flex; /* Utiliza Flexbox para organizar las tarjetas en línea */
+  justify-content: space-around; /* Distribuye las tarjetas de manera uniforme */
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la siguiente línea si no caben */
+}
+
+.card {
+  background-color: #fff; /* Color de fondo blanco para las tarjetas */
+  border: 1px solid #ddd; /* Bordes finos grises para las tarjetas */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad a la tarjeta */
+  margin: 10px; /* Espacio entre las tarjetas */
+  padding: 20px; /* Espaciado interno de cada tarjeta */
+  width: 30%; /* Establece el ancho de las tarjetas al 30% */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para los efectos de transformación y sombra */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Eleva la tarjeta cuando el ratón pasa sobre ella */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para dar más énfasis al efecto de elevación */
+}
+
+/* ===== Animación al cargar las tarjetas ===== */
+@keyframes fade-in {
+  from {
+    opacity: 0; /* Inicia con la tarjeta completamente transparente */
+    transform: translateY(20px); /* Inicia con la tarjeta desplazada hacia abajo */
+  }
+  to {
+    opacity: 1; /* Termina con la tarjeta completamente visible */
+    transform: translateY(0); /* Termina con la tarjeta en su posición original */
+  }
+}
+
+.card {
+  animation: fade-in 0.8s ease-in-out; /* Aplica la animación 'fade-in' a las tarjetas con duración de 0.8s */
+}
+
+/* ===== Pie de página ===== */
+.footer {
+  background-color: #2c3e50; /* Color de fondo oscuro para el pie de página */
+  color: #fff; /* Color de texto blanco */
+  text-align: center; /* Centra el texto del pie de página */
+  padding: 10px 0; /* Espaciado interno en la parte superior e inferior del pie de página */
+  margin-top: 20px; /* Espacio superior entre el pie de página y otros elementos */
+}
+
+/* ===== Media Queries ===== */
+/* Dispositivos medianos (pantallas con un ancho máximo de 768px) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Reduce las columnas del grid a 2 */
+  }
+
+  .card {
+    width: 45%; /* Ajusta el tamaño de las tarjetas al 45% */
+  }
+}
+
+/* Dispositivos pequeños (pantallas con un ancho máximo de 480px) */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Reduzca el grid a una sola columna */
+  }
+
+  .cards {
+    flex-direction: column; /* Organiza las tarjetas en una columna en lugar de una fila */
+    align-items: center; /* Centra las tarjetas en el contenedor */
+  }
+
+  .card {
+    width: 90%; /* Aumenta el tamaño de las tarjetas al 90% del ancho disponible */
+  }
+
+  .nav ul {
+    flex-direction: column; /* Organiza la barra de navegación verticalmente */
+  }
+
+  .nav li {
+    margin: 5px 0; /* Reduce el espacio entre los elementos de la lista */
+  }
+}

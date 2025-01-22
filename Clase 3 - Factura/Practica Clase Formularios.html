@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de registrio</h1>
+     <br>
+     <form action="factura.html" method="post">
+        <br><br> Nombre: <input type="text" name="nombre" id="nombre" placeholder="Digite nombre" required>
+        <br><br> Edad: <input type="number" name="edad" id="edad" placeholder="ingrese su edad" required>
+        <br><br> email: <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
+        <br><br>Contraseña <input type="password" name="contraseña" id="contraseña"  placeholder="Ingrese su contraseña" required>
+        <br><br> genero
+        <select name="genero" id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select>
+        <br><br>
+        <fieldset>
+            <legend>información de pago</legend>
+            <input type="radio" name="efectivo" id="pago" value="efectivo" required> Efectivo
+            <input type="radio" name="efectivo" id="tarjeta" value="tarjeta" required> Tarjeta 
+        </fieldset>
+ 
+        <br><br>Fecha de nacimiento: <input type="date" name="fecha" id="fecha">
+
+        <br><br><input type="checkbox" name="auto" id="check"> Acepto los terminos y condiciones
+        <!--queda mejor en una tabla-->
+ 
+        <br><br> Seleccione la imagen <input type="file" name="img" id="img" accept="image/*"> 
+
+        <br><br> 
+        observaciones
+        <br><br> 
+        <textarea name="observaciones" id="observaciones" cols="30" rows="10" placeholder="escriba su mensaje"></textarea>
+         <br><br><input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

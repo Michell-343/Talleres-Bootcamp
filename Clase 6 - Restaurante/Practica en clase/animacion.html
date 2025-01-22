@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja{
+            background-color: rgb(224, 145, 255);
+            padding: 40px;
+            text-align: center;
+            color: azure;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 300px;
+            height: 300px;
+            transition: all 0.5s ease;
+            margin: 50px auto;
+        }
+
+        .caja:hover{
+            background-color: aqua;
+            transform: scale(0.5);
+        }
+
+        .caja2{
+            background-color: rgb(255, 145, 145);
+            padding: 40px;
+            text-align: center;
+            color: azure;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 150px;
+            height: 150px; 
+            margin: 50px auto; 
+            animation: animarcaja 2s infinite;
+        }
+
+    @keyframes animarcaja {
+        0% {
+            background-color: blueviolet;
+            transform: rotate(0deg);
+        }
+        
+        100% {
+            background-color: black;
+            transform: rotate(360deg);
+        }
+    }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="caja">Caja 1</div>
+    </div>
+
+    <div class="contenedor2">
+        <div class="caja2">Caja 1</div>
+    </div>
+
+</body>
+</html>

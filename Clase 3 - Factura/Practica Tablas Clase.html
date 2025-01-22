@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas y formularios</title>
+</head>
+<body>
+    <table border="5" cellspacing="5" cellpadding="2" width="100%" >
+        <caption>Registro estudiantes</caption>
+        
+        <thead>
+            <tr  bgcolor="#ffcc60" align="center" valign="top" > <!--Determina la fila-->
+                <th >Id</th> <!-- Determina la columna, como  titulo de la tabla-->
+                <th colspan="2"  bgcolor="#ffcc99" align="center">Nombre</th> <!-- Colspan combina columnas-->
+                <th colspan="2">Dirección y barrio</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody bgcolor="#dd1140" >
+            <tr align="center" valign="top">
+                <td rowspan="2" >1</td> <!--Determina la columna y se convierte una celda-->
+                <td>Michell</td>
+                <td>Inagan</td>
+                <td>Calle 6ta</td>
+                <td>Libertadores</td>
+                <td  >michel343myg@gmail.com</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>Capurro</td>
+                <td>avenida 6ta norte</td>
+                <td>Robles</td>
+                <td>david@hotmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>camilo</td>
+                <td>galviz</td>
+                <td>6ta norte</td>
+                <td>pobrblaso</td>
+                <td>camilo@hotmail.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="5">Total de estudiantes</td>
+            <td>2</td>
+        </tfoot>
+    </table>
+
+    <table border="2" cellspacing="1" cellpadding="2" width="500" align="center">
+        <caption>Registro estudiantes</caption>
+        <thead>
+            <tr> <!--Determina la fila-->
+                <th>Id</th> <!-- Determina la columna, como  titulo de la tabla-->
+                <th colspan="2">Nombre</th> <!-- Colspan combina columnas-->
+                <th colspan="2">Dirección y barrio</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td> <!--Determina la columna y se convierte una celda-->
+                <td>Michell</td>
+                <td>Inagan</td>
+                <td>Calle 6ta</td>
+                <td>Libertadores</td>
+                <td>michel343myg@gmail.com</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>Capurro</td>
+                <td>avenida 6ta norte</td>
+                <td>Robles</td>
+                <td>david@hotmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>camilo</td>
+                <td>galviz</td>
+                <td> 6ta norte</td>
+                <td>pobrblaso</td>
+                <td>camilo@hotmail.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="5">Total de estudiantes</td>
+            <td>2</td>
+            
+        </tfoot>
+    </table>
+    </tbody>
+</body>
+</html>

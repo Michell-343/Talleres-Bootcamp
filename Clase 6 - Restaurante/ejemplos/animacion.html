@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    /* Definición de la animación con @keyframes */
+    @keyframes animarCaja {
+  /* Estado inicial de la animación (0%) */
+    0% {
+        background-color: #3498db; /* Color de fondo azul */
+        transform: rotate(0deg); /* La caja no tiene rotación */
+     }
+  
+  /* Estado final de la animación (100%) */
+    100% {
+        background-color: #e74c3c; /* Color de fondo rojo */
+        transform: rotate(360deg); /* La caja gira 360 grados (vuelta completa) */
+     }
+}
+
+/* Estilo de la caja animada */
+    .caja {
+        width: 200px; /* Ancho de la caja de 200 píxeles */
+        height: 200px; /* Altura de la caja de 200 píxeles */
+        animation: animarCaja 2s infinite; /* Aplica la animación "animarCaja" durante 2 segundos y se repite indefinidamente */
+    }
+
+    </style>
+</head>
+<body>
+    <div class="caja"></div>
+</body>
+</html>

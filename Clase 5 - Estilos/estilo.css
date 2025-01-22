@@ -1,0 +1,173 @@
+/* Estilos generales */
+body {
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    
+}
+
+header{
+    background: linear-gradient(135deg, #36b8d8, #1a819b,#0c3a6e);
+    text-align: center;
+    padding: 2rem 1rem;
+    color: aliceblue;
+    position: relative;
+    
+}
+
+
+/* Estilo del menú de navegación*/
+
+nav {
+    position: center;
+    top:1rem ;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav ul li a{
+    margin: 0 5px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: aqua;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 11;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(90deg, aqua, rgb(0, 139, 139));
+    color: #111264;
+border-color: transparent;
+}
+
+main {
+    margin:0px auto;
+    width: 50%;
+}
+
+h1 {
+    font-size: 150px;
+    margin: 0px;
+}
+
+#infoempresa {
+    font-size: 30px;
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 0;
+    margin: 10;
+    color: #36b8d8;
+}
+
+p {
+    font-style: italic;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;  
+    color: #111264;
+}
+
+form {
+    background-color: #fff; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    width: 50%;
+    margin: 0 auto; /* Centrado del formulario */
+    border-radius: 5px;
+    border-color: #111264;
+    margin-bottom: 5%;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+form input, form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #3498db; /* Fondo azul */
+    color: white; /* Texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2980b9; /* Cambio de color cuando el cursor pasa sobre el botón */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina los espacios entre las celdas */
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc; /* Borde gris claro para las celdas */
+}
+
+th {
+    background-color: #3498db; /* Fondo azul para los encabezados de la tabla */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fondo gris para filas pares */
+}
+
+tr:hover {
+    background-color: #dcdcdc; /* Fondo gris claro cuando se pasa el cursor sobre una fila */
+}
+
+footer{
+    background: linear-gradient(135deg, #36b8d8, #1a819b,#0c3a6e);
+    padding: 2rem 1rem;
+    width: 100%;
+    position: relative;
+    align-items: center; 
+}
+
+footer p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+
+}

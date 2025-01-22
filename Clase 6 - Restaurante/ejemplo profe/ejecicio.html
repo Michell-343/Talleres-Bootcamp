@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Ejemplo Completo con Flexbox, Grid y Animaciones</title> 
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header"> <!-- Contenedor del encabezado de la página -->
+    <h1>Ejemplo Completo</h1> <!-- Título principal de la página -->
+    <nav class="nav"> <!-- Sección de navegación (barra de menú) -->
+      <ul> <!-- Lista de elementos de navegación -->
+        <li><a href="#">Inicio</a></li> <!-- Enlace a la sección de inicio (aquí solo es un marcador de posición) -->
+        <li><a href="#">Servicios</a></li> <!-- Enlace a la sección de servicios -->
+        <li><a href="#">Contacto</a></li> <!-- Enlace a la sección de contacto -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Principal -->
+  <main> <!-- Contenedor principal para todo el contenido de la página -->
+
+    <!-- Galería de imágenes -->
+    <section class="gallery"> <!-- Sección que contiene la galería de imágenes -->
+      <h2>Galería de Imágenes</h2> <!-- Título de la galería -->
+      <div class="grid-container"> <!-- Contenedor que usará CSS Grid para organizar las imágenes -->
+        <!-- Elementos de la galería -->
+        <div class="grid-item"><img src="rastreogps1.png" alt="Imagen 1"></div> <!-- Imagen 1 de la galería -->
+        <div class="grid-item"></div> <!-- Espacio vacío en el grid -->
+        <div class="grid-item">3</div> <!-- Un elemento con texto (para ocupar espacio) -->
+        <div class="grid-item"><img src="disponibi.jpg" alt="Imagen 1"></div> <!-- Imagen 2 de la galería -->
+        <div class="grid-item">5</div> <!-- Otro elemento con texto -->
+        <div class="grid-item">6</div> <!-- Otro elemento con texto -->
+      </div>
+    </section>
+
+    <!-- Tarjetas usando Flexbox -->
+    <section class="cards-section"> <!-- Sección para mostrar tarjetas -->
+      <h2>Nuestras Tarjetas</h2> <!-- Título de la sección de tarjetas -->
+      <div class="cards"> <!-- Contenedor que usará Flexbox para organizar las tarjetas -->
+        <!-- Tarjeta 1 -->
+        <article class="card">
+          <h3>Tarjeta 1</h3> <!-- Título de la tarjeta 1 -->
+          <p>Contenido de la tarjeta 1.</p> <!-- Descripción de la tarjeta 1 -->
+        </article>
+        <!-- Tarjeta 2 -->
+        <article class="card">
+          <h3>Tarjeta 2</h3> <!-- Título de la tarjeta 2 -->
+          <p>Contenido de la tarjeta 2.</p> <!-- Descripción de la tarjeta 2 -->
+        </article>
+        <!-- Tarjeta 3 -->
+        <article class="card">
+          <h3>Tarjeta 3</h3> <!-- Título de la tarjeta 3 -->
+          <p>Contenido de la tarjeta 3.</p> <!-- Descripción de la tarjeta 3 -->
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer"> <!-- Contenedor del pie de página -->
+    <p>&copy; 2024 Ejemplo Completo. Todos los derechos reservados.</p> <!-- Mensaje de derechos de autor -->
+  </footer>
+</body>
+</html>

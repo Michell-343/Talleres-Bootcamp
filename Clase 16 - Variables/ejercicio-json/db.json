@@ -1,0 +1,120 @@
+{
+  "docentes": [
+    {
+      "nombre": "Camilo",
+      "apellido": "Galviz",
+      "asignaturas": [
+        {
+          "nombre": "HTML"
+        },
+        {
+          "nombre": "CSS"
+        }
+      ],
+      "id": "e6d4"
+    },
+    {
+      "id": "afe8"
+    },
+    {
+      "id": "3a76",
+      "nombre": "Samir",
+      "apellido": "perez",
+      "asignaturas": [
+        {
+          "nombre": "Angular"
+        },
+        {
+          "nombre": "Laravel"
+        },
+        {
+          "nombre": "otro curso"
+        }
+      ]
+    }
+  ],
+  "estudiantes": [
+    {
+      "nombre": "juan",
+      "apellido": "peñaloza",
+      "promedio": "7.5",
+      "id": "486a"
+    },
+    {
+      "nombre": "Hector",
+      "apellido": "Rocero",
+      "promedio": "7.5",
+      "id": "ee51"
+    },
+    {
+      "nombre": "Michell",
+      "apellido": "Inagan",
+      "promedio": "7.5",
+      "id": "5dbf"
+    },
+    {
+      "0": {
+        "nombre": "juan",
+        "apellido": "peñaloza",
+        "promedio": "7.5",
+        "id": "486a"
+      },
+      "1": {
+        "nombre": "Hector",
+        "apellido": "Rocero",
+        "promedio": "7.5",
+        "id": "ee51"
+      },
+      "2": {
+        "nombre": "Michell",
+        "apellido": "Inagan",
+        "promedio": "7.5",
+        "id": "5dbf"
+      },
+      "3": {
+        "nombre": "isabel",
+        "apellido": "Rocero",
+        "promedio": "10"
+      },
+      "4": {
+        "nombre": "Cristian",
+        "apellido": "Inagan",
+        "promedio": "5"
+      },
+      "5": {
+        "nombre": "Daniel",
+        "apellido": "Rocero",
+        "promedio": "2"
+      },
+      "6": {
+        "nombre": "Nicolas",
+        "apellido": "Inagan",
+        "promedio": "5"
+      },
+      "id": "59df"
+    }
+  ],
+  "boot": [
+    {
+      "nombre": "Fullstack",
+      "descripcion": "desarrollo de aplicaciones web",
+      "duracion": "120 horas",
+      "nivel": "intemedio",
+      "id": "0f31"
+    },
+    {
+      "nombre": "Fullstack",
+      "descripcion": "desarrollo de aplicaciones web",
+      "duracion": "120 horas",
+      "nivel": "avanzado",
+      "id": "21dd"
+    },
+    {
+      "nombre": "Inteligencia artificial  ",
+      "descripcion": "creación de intelifencias artificiales",
+      "duracion": "120 horas",
+      "nivel": "basico",
+      "id": "f878"
+    }
+  ]
+}

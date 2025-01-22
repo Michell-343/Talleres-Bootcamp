@@ -1,0 +1,14 @@
+const fs = require('fs')
+
+const lectura_archivo = fs.readFileSync('texto.txt', 'utf-8') //lectura de archivo
+
+fs.writeFileSync('texto.txt', `Los gatos son perfectos`)
+
+const intronode = fs.readFileSync('.texto2', 'utf-8')
+
+const filemodif = lectura_archivo.replace(/gatos/ig, 'GATOS');
+
+fs.writeFileSync('texto.txt', filemodif)
+
+console.log(lectura_archivo)
+//console.log(intronode)

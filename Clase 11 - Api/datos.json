@@ -1,0 +1,43 @@
+[{
+    "nombre": "Jhonathan",
+    "apellido": "corrales",
+    "edad": 30,
+    "direccio": [
+        {
+            "ciudad": "Cali",
+            "Dir": "cra 86 # 26 -65",
+            "barrio": "Valle del lili"
+        }
+    ],
+    "telefonos": ["3145678321", "3160986542"]
+
+},
+{
+    "nombre": "Samir",
+    "apellido": "Ramos",
+    "edad": 20,
+    "direccio": [
+        {
+            "ciudad": "Cali",
+            "Dir": "cra 86 # 50 -65",
+            "barrio": "Caney"
+        }
+    ],
+    "telefonos": ["3145673421", "3210986542"]
+
+},
+{
+    "nombre": "Devrier",
+    "apellido": "Peñaloza",
+    "edad": 43,
+    "direccio": [
+        {
+            "ciudad": "Jamundi",
+            "Dir": "Calle 5 # 10 -65",
+            "barrio": "Las flores"
+        }
+    ],
+    "telefonos": ["3015673421", "3210986242"]
+
+}
+]

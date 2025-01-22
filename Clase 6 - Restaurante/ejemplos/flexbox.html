@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="es"> <!-- Declaración del tipo de documento y especificación del lenguaje español -->
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres para admitir símbolos especiales y acentos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva en dispositivos móviles -->
+  <title>Ejemplo de Flexbox</title> <!-- Título de la página que se muestra en la pestaña del navegador -->
+
+  <!-- Estilos internos de CSS -->
+   
+     <style>
+    /* Contenedor principal que utiliza Flexbox */
+    .contenedor {
+      display: flex; /* Convierte el contenedor en un contenedor flexbox */
+      flex-direction: column; /* Alinea los elementos hijos en una columna vertical */
+      justify-content: space-between; /* Distribuye el espacio entre los elementos */
+      align-items: center; /* Centra los elementos horizontalmente en el contenedor */
+      height: 200px; /* Altura del contenedor */
+      background-color: #f0f0f0; /* Color de fondo gris claro */
+      padding: 100px; /* Espaciado interno alrededor del contenedor */
+      gap: 20px; /* Espacio entre los elementos hijos */
+    }
+
+    /* Estilo de cada caja dentro del contenedor */
+    .caja {
+      background-color: #3498db; /* Color de fondo azul */
+      color: white; /* Color del texto blanco */
+      padding: 20px; /* Espaciado interno dentro de la caja */
+      width: 100px; /* Ancho fijo de la caja */
+      height: 100px; /* Altura fija de la caja */
+      text-align: center; /* Centra el texto horizontalmente */
+    }
+  </style>
+  
+</head>
+<body>
+  <!-- Contenedor principal con las cajas -->
+  <div class="contenedor">
+    <div class="caja">Caja1</div> <!-- Primera caja -->
+    <div class="caja">Caja2</div>
+    <div class="caja">Caja3</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Declaración del tipo de documento HTML5 y el idioma español -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres para admitir acentos y caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea responsivo para dispositivos móviles -->
+  <title>Ejemplo de CSS Grid</title> <!-- Título de la página visible en la pestaña del navegador -->
+
+  <style>
+    /* Contenedor principal con CSS Grid */
+    .contenedor-grid {
+      background-color: #d6d7d1;
+      display: grid; /* Convierte el contenedor en una cuadrícula (grid) */
+      grid-template-columns: repeat(3, 1fr); /* Define 3 columnas de igual tamaño usando fracciones */
+      gap: 20px; /* Establece un espacio de 10px entre filas y columnas */
+      padding: 10px; /* Espaciado interno entre el borde del contenedor y las celdas */
+    }
+
+    /* Estilo general para cada caja dentro del contenedor */
+    .caja {
+      background-color: #2ecc71; /* Color de fondo verde */
+      color: white; /* Color del texto blanco */
+      padding: 20px; /* Espaciado interno para aumentar el tamaño de las cajas */
+      text-align: center; /* Centra el texto horizontalmente */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Contenedor principal que utiliza CSS Grid -->
+  <div class="contenedor-grid">
+    <div class="caja">Caja 1</div> <!-- Primera caja -->
+    <div class="caja">Caja 2</div> <!-- Segunda caja -->
+    <div class="caja">Caja 3</div> <!-- Tercera caja -->
+    <div class="caja">Caja 4</div> <!-- Cuarta caja -->
+    <div class="caja">Caja 5</div> <!-- Quinta caja -->
+    <div class="caja">Caja 6</div> <!-- Sexta caja -->
+  </div>
+</body>
+</html>
