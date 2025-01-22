@@ -1,5 +1,10 @@
+/* forma anterior
 const { envs } = require ('./config/env')  //importar forma anterior
 const {iniciarServidor} = require  ('./server/server')  //importar servidor
+*/
+
+import {envs} from './config/env.js'  //importar forma actual
+import {iniciarServidor} from './server/server.js'  //importar servidor
 
 //hay que llamarla antes
 //aqui trabajamos nuestrasvariables de entorno

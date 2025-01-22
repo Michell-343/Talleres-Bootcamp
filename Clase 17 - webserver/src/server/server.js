@@ -1,10 +1,15 @@
 //llamar el path express
+/* forma anterior
 const express =require('express')
-
 const path = require('path')
+*/
+
+import express from 'express' //forma nueva
+import path from 'path' //forma nueva
+
 
 //inicializar servidor
-const iniciarServidor = (option) => {
+export const iniciarServidor = (option) => {
     const {port, public_path = 'public'} = option //'public' es el nombre de la carpeta
  /*   console.log(port)
     console.log(public_path) Esto mostraria los datos*/
@@ -26,8 +31,10 @@ const iniciarServidor = (option) => {
 }
 
 
-//exportar servidor
+//exportar servidor forma anterior
 
+/*
 module.exports = {
     iniciarServidor
 }
+    */
